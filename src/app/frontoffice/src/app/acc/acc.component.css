@@ -1,0 +1,81 @@
+.acc-fullscreen {
+  position: fixed;           /* Fixes the container to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;             /* Full viewport width */
+  height: 100vh;            /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color */
+  display: flex;            /* Use Flexbox to manage layout */
+  flex-direction: column;   /* Stack elements vertically */
+  
+
+}
+:host {
+  position: fixed;         /* Make it stay fixed in the viewport */
+  top: 0;                  /* Position it at the top */
+  left: 0;                 /* Position it at the left */
+  width: 100vw;            /* Full width (viewport width) */
+  height: 100vh;           /* Full height (viewport height) */
+  background-color: white; /* Add background color */
+  z-index: 10000;           /* Ensure it is on top of other content */
+  display: flex;           /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+
+}
+/* Optional: Style for headings and paragraphs */
+h1 {
+  top: 50%;
+  position: absolute;
+ left: 45%;
+  font-size: 2.5rem;
+  justify-content: flex-start;
+}
+
+h4 {
+
+
+}
+.image-container {
+  position: relative;       /* Create a relative positioning context */
+  width: 100%;              /* Full width or adjust as needed */
+  max-width: 600px;         /* Adjust the max width of the image container */
+}
+
+
+.text-overlay {
+  position: absolute;       /* Position the text over the image */
+             top: 30%;  /* Center vertically (adjust as needed) */
+  left: 40%;                /* Center horizontally (adjust as needed) */
+  transform: translate(-50%, -50%); /* Centering trick */
+  color: white;             /* Text color to stand out on the image */
+  text-align:start;       /* Center the text */
+  font-size: 1.5rem;        /* Adjust font size */
+  font-weight: bold;        /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+
+
+.button-group {
+  position: absolute;
+  bottom: 60px; /* Adjust as needed to move the buttons up or down */
+  left: 50%;
+  transform: translateX(-50%); /* Center the buttons horizontally */
+  display: flex;
+  gap: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color:#FD8D9B; /* Button color */
+  color: #153e6c ;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #153e6c; /* Change button color on hover */
+}

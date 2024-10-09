@@ -1,0 +1,14 @@
+<div class="video-container" (click)="playVideo()">
+  <video id="video" width="100%">
+    <source src="assets/img/sample.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div *ngIf="isPlaying" class="modal-backdrop" (click)="closeVideo()">
+  <div class="video-modal" (click)="$event.stopPropagation()">
+    <button id="close-button" class="close-button" (click)="closeVideo()">X</button>
+    <video #videoPlayer width="100%">
+      <source src="assets/img/sample.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>

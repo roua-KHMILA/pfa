@@ -1,0 +1,67 @@
+
+.add-fullscreen {
+margin-top: 10%;
+  width: 100vw;
+
+  display: flex;           /* Use Flexbox to manage layout */
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: center;     /* Center children horizontally */
+  justify-content: center;  /* Center children vertically */
+          /* Ensure it is on top of other content */
+}
+
+:host {
+
+  height: 100vh;                /* Position it at the left */
+  width: 100vw;             /* Full width (viewport width) */
+           /* Full height (viewport height) */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+          /* Ensure it is on top of other content */
+  display: flex;            /* Flexbox to center content */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  background-image: url(C:\Users\rouak\Desktop\ukla-front\pfa\src\assets\img\background.png);
+}
+
+form {
+
+  background-color:  #153e6c;
+  padding: 2rem;
+
+  box-shadow: 0 4px 8px rgba(13, 2, 51, 0.2); /* Add a shadow to the video */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 120%;
+  max-width: 600px;
+  height: 500px;
+  max-height: 460px;
+  justify-content: center;
+
+
+}
+
+.button{
+
+  justify-content:stretch;
+}
+label{
+  color: white;
+}
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #153e6c; /* Button color */
+  color: white ;
+  cursor: pointer;
+  font-weight: bold;
+}
+.h-105:hover {
+  box-shadow: 0 8px 16px rgba(4, 1, 21, 0.926);
+  transform: scale(1.05);
+}
+.items{
+  display:block;
+  justify-content: center;
+  margin-left: 60px;
+}

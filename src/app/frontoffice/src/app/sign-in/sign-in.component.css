@@ -1,0 +1,65 @@
+
+:host {
+  position: fixed;         /* Make it stay fixed in the viewport */
+  top: 0;                  /* Position it at the top */
+  left: 0;                 /* Position it at the left */
+  width: 100vw;            /* Full width (viewport width) */
+  height: 100vh;           /* Full height (viewport height) */
+  background-color: white; /* Add background color */
+  z-index: 1000;           /* Ensure it is on top of other content */
+  display: flex;           /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  background-image: url(C:\Users\rouak\Desktop\ukla-front\pfa\src\app\frontoffice\src\assets\img\carousel-08.png);
+}
+
+/* Optionally add padding or styling to the form elements */
+form {
+  background-color:  #153e6c;
+  padding: 2rem;
+
+  box-shadow: 0 4px 8px rgba(13, 2, 51, 0.2); /* Add a shadow to the video */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 120%;
+  max-width: 800px;
+  height: 720%;
+  max-height: 800px;
+  justify-content: center;
+
+}
+.input{
+display: flex;
+justify-content: flex-end;
+}
+
+label{
+  color: white;
+}
+.button{
+
+  justify-content:stretch;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.h-105:hover {
+  box-shadow: 0 8px 16px rgba(4, 1, 21, 0.926);
+  transform: scale(1.05);
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #153e6c; /* Button color */
+  color: white ;
+  cursor: pointer;
+  font-weight: bold;
+}

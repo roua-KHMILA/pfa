@@ -1,0 +1,44 @@
+
+  
+  .d-none {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .d-block\@md {
+      display: block;
+    }
+  }
+  
+  .relative {
+    position: relative;
+  }
+  .w-1 {
+    width: 33.33%;
+  }
+  
+
+  .circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+
+  
+  .circle:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    transform: scale(1.05); 
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  .container1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
